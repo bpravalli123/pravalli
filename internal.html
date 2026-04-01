@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <style>
+            .card{
+                background-color: blueviolet;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+                padding: 20px;
+                margin: 20px auto;
+                max-width: 400px;
+                transition: transform 0.3s;
+            }
+            .card:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(red, green, blue, alpha);
+            }
+            .card-title{
+                color: brown;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .card-text{
+                color: chartreuse;
+                line-height: 1.5;
+            }
+            .btn{
+                background-color: blue;
+                color: pink;
+                padding: 10px 20px;
+                border: non;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            .btn:hover{
+                background-color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h2 class="card-title"> Beatiful Card</h2>
+            <p class="card-text"> This is a card component style with internal css. It has hover effects and a modern design.</p>
+            <button class="btn"> Click me</button>
+        </div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: o;
+                box-sizing: border-box;
+            }
+            body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .navbar {
+                background-color: brown;
+                overflow: hidden;
+                position: sticky;
+                top: 0;
+            }
+            .navbar a {
+                float: left;
+                display: block;
+                color: darkgreen;
+                text-align: center;
+                padding: 14px 20px;
+               text-decoration: none;
+               transition: backgroun-color 0.3s;
+            }
+            .navbar a:hover {
+             background-color: cyan;
+             color: pink;
+            }
+            .navbar a.actve {
+                background-color: chocolate;
+                color: white;
+            }
+            .container {
+                padding: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .section {
+                margin: 40px 0;
+                padding: 20px;
+                background-color: blue;
+                border-radius: 8px;
+            }
+            @media screen and ( max-width){
+                .navbar a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+        <a href="#home" class="active"> Home</a>
+        <a href="#about"> About</a>
+        <a href="#services">Services</a>
+        <a href="#contact"> Contact</a>
+        </div>
+<div class="container">
+    <div id="home" class="section">
+        <h2>Home Section</h2>
+        <p> This is a responsive navigation bar with internal CSS.</p>
+    </div>
+</div>
+    </body>
+</html>
